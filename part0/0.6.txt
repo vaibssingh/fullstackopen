@@ -1,0 +1,6 @@
+browser->server: POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note right of browser: data is sent as JSON
+server-->browser: status code 201 Created
+note right of browser: JS execution starts which registers an event handler to handle the form submit button
+note right of browser: Event handler creates a new note and rerenders the notes page
+browser-->server: JS file finally sends the note to the server as JSON 
